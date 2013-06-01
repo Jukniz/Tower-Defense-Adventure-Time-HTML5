@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--[if lte IE 8]><meta http-equiv="X-UA-Compatible" content="chrome=1" /><![endif]-->
+        <title>My First Canvas Game</title>
+        <link href="./css/selectmap.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+
+    <body>
+
+        <audio id="player" src="./Resources/opening.wav" autoplay loop>
+        </audio>
+
+        <div class="sonido">
+            <button class="sonidobutton" id="reproducir" onClick="document.getElementById('player').play();"></button>
+            <button class="sonidobutton" id="pausar"  onClick="document.getElementById('player').pause();"></button>
+            <button class="sonidobutton" id="subir" onClick="document.getElementById('player').volume += 0.1;"></button>
+            <button class="sonidobutton" id="bajar" onClick="document.getElementById('player').volume -= 0.1;"></button>
+        </div>
+        
+        <div class="buto">
+            <button class="sonidobutton" id="Home" onclick="window.location = './index.html';"></button>
+            <button class="sonidobutton" id="Return" onclick="window.location = './index.html';"></button>
+        </div>
+
+        <div id="canvas">
+            <div id="Map1" onclick="window.location = './map1/towerdefense.html';"><center><div class="mapname">Mapa 1</div></center></div>
+            <div id="Map2" onclick="window.location = './map2/towerdefense.html';"><center><div class="mapname">Mapa 2</div></center></div>
+        </div>
+
+
+
+        <!--
+         <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=276532112479141";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+            
+            <div class="fb-like" data-href="https://www.facebook.com/TowerdefenseJukniz" data-send="true" data-width="450" data-show-faces="true"></div>
+        -->
+    </body>
+</html>

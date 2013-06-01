@@ -1,0 +1,106 @@
+body {
+    background: url(../Resources/JumpingFinn_CN_takeover_es.jpg) no-repeat scroll center top;
+    background-color:#c6eae0;
+}
+
+.sonido{
+   margin-top: 5px;
+}
+
+.sonidobutton{
+    width: 50px;
+    height: 50px;
+    background-repeat:no-repeat;
+    background-position:center; 
+    background-color:transparent;
+    border-width: 0px;
+}
+
+.sonidobutton:active { 
+    background-position:  bottom; 
+}
+
+#reproducir{
+    background-image: url(../Resources/iconoreproducir.png);
+}
+
+#pausar{
+    background-image: url(../Resources/iconomute.png);
+
+}
+
+
+#subir{
+    background-image: url(../Resources/iconosubirvolumen.png);
+
+}
+
+
+#bajar{
+    background-image: url(../Resources/iconobajarvolumen.png);
+
+}
+
+.buto{
+     margin-top: -55px;
+    float: right;
+}
+
+#Home{
+     background-image: url(../Resources/iconhouse.png);
+}
+
+#Return{
+    background-image: url(../Resources/iconreturn.png);
+}
+#canvas{
+    display:block;
+    margin:0 auto 0 auto;
+    border:1px solid #000;
+    width: 250px;
+    height: 500px;
+    padding-left: 450px;
+    padding-right: 100px;
+    padding-top: 100px;
+    background-image: url(../Resources/portada.jpg);
+
+}
+
+#Map1{
+    background: url(../Resources/map1.jpg);
+    background-size: 200px 150px;
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 200px;
+    height: 150px;
+    font-family: "Calibri";
+    font-size: 32px;
+  
+}
+
+#Map1:hover{
+        opacity:0.4;
+filter:alpha(opacity=40);
+}
+
+#Map2{
+    margin-top: 100px;
+    background: url(../Resources/map2.jpg);
+    background-size: 200px 150px;
+    background-position: center;
+    background-repeat:no-repeat;
+   width: 200px;
+    height: 150px;
+    font-family: "Calibri";
+    font-size: 32px;
+}
+#Map2:hover{
+        opacity:0.4;
+filter:alpha(opacity=40);
+}
+
+.mapname{
+    background: url(../Resources/namemaptexture.png);
+    color: white;
+}
+

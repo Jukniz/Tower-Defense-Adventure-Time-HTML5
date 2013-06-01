@@ -1,0 +1,84 @@
+body {
+    background: url(../Resources/JumpingFinn_CN_takeover_es.jpg) no-repeat scroll center top;
+    background-color:#c6eae0;
+}
+
+.sonido{
+    margin-top: 5px;
+}
+
+.sonidobutton{
+    width: 50px;
+    height: 50px;
+    background-repeat:no-repeat;
+    background-position:center; 
+    background-color:transparent;
+    border-width: 0px;
+}
+
+.sonidobutton:active { 
+    background-position:  bottom; 
+}
+
+#reproducir{
+    background-image: url(../Resources/iconoreproducir.png);
+}
+
+#pausar{
+    background-image: url(../Resources/iconomute.png);
+
+}
+
+
+#subir{
+    background-image: url(../Resources/iconosubirvolumen.png);
+
+}
+
+
+#bajar{
+    background-image: url(../Resources/iconobajarvolumen.png);
+
+}
+
+#canvas{
+    display:block;
+    margin:0 auto 0 auto;
+    border:1px solid #000;
+    width: 400px;
+    height: 600px;
+    background-image: url(../Resources/portada.jpg);
+    padding-left: 400px;
+
+}
+
+#Jugar{
+    background: url(../Resources/pergamino.png);
+    background-size: 300px 80px;
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 300px;
+    height: 80px;
+    padding-top: 40px;
+    font-family: "Calibri";
+    font-size: 32px;
+    margin-top: 150px;
+}
+
+#Instrucciones{
+    background: url(../Resources/pergamino.png);
+    background-size: 300px 80px;
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 300px;
+    height: 80px;
+    padding-top: 40px;
+    font-family: "Calibri";
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+
+
+
+

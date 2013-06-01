@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--[if lte IE 8]><meta http-equiv="X-UA-Compatible" content="chrome=1" /><![endif]-->
+    <title>My First Canvas Game</title>
+    <link href="towerdefense.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="application/javascript" src="towerdefense.js"></script>
+  </head>
+
+  <body>
+
+    <audio id="player" src="../Resources/opening.wav" autoplay loop>
+    </audio>
+
+    <div class="sonido">
+      <button class="sonidobutton" id="reproducir" onClick="javascript:playReproductor();"></button>
+      <button class="sonidobutton" id="pausar"  onClick="javascript:muteReproductor();"></button>
+      <button class="sonidobutton" id="subir" onClick="javascript:setVolumen(0.1)"></button>
+      <button class="sonidobutton" id="bajar" onClick="javascript:setVolumen(-0.1);"></button>
+    </div>
+     <div class="buto">
+            <button class="sonidobutton" id="Home" onclick="window.location = '../index.html';"></button>
+            <button class="sonidobutton" id="Return" onclick="window.location = '../selectmap.html';"></button>
+        </div>
+    <canvas id="canvas" width="800" height="600" onClick="clickReporter()">
+      Canvas not supported by your browser.
+    </canvas>
+  <center><div class="menu_tower">
+      <button  class="tower" id="start" onClick="javascript:horda.nextHorde();" onmouseover="showTextArea(-1);" onmouseout="hiddenTextArea();"></button>
+      <button class="tower" id="ice" onClick="javascript:basictower(0);" onmouseover="showTextArea(0);" onmouseout="hiddenTextArea();"></button>
+      <button class="tower" id="lemon" onClick="javascript:basictower(1);" onmouseover="showTextArea(1);" onmouseout="hiddenTextArea();"></button>
+      <button class="tower" id="magic" onClick="javascript:basictower(2);" onmouseover="showTextArea(2);" onmouseout="hiddenTextArea();"></button>
+      <button class="tower" id="hudson" onClick="javascript:basictower(3);" onmouseover="showTextArea(3);" onmouseout="hiddenTextArea();"></button>
+      <button class="tower" id="lich" onClick="javascript:basictower(4);" onmouseover="showTextArea(4);" onmouseout="hiddenTextArea();"></button>
+      <button class="tower" id="gunter" onClick="javascript:sellTower()" onmouseover="showTextArea(-2);" onmouseout="hiddenTextArea();"></button>
+      <button class="tower" id="reset" onClick="javascript:reset();" onmouseover="showTextArea(-3);" onmouseout="hiddenTextArea();"></button>
+
+    </div>
+
+  </center>
+
+
+  <!--
+   <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=276532112479141";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+      
+      <div class="fb-like" data-href="https://www.facebook.com/TowerdefenseJukniz" data-send="true" data-width="450" data-show-faces="true"></div>
+  -->
+</body>
+</html>
